@@ -1,0 +1,315 @@
+{
+  "_comment": "구석기 석기 일러스트 PDF 내보내기 권장 설정 v1.0.0",
+  "_description": "이 파일은 Inkscape에서 석기 도면을 PDF로 내보낼 때 사용할 권장 설정을 담고 있습니다. Inkscape GUI 또는 명령줄 인터페이스에서 이 설정을 참조하세요.",
+
+  "pdf_export": {
+    "version": "PDF 1.4 또는 PDF/X-1a 또는 PDF/A",
+    "version_note": "PDF 1.4는 널리 호환되며, PDF/X-1a는 인쇄 표준, PDF/A는 장기 보존 표준입니다.",
+
+    "text_to_path": true,
+    "text_to_path_note": "텍스트를 패스로 변환하여 글꼴 호환성 문제를 방지합니다. 다른 시스템에서 열 때 글꼴이 없어도 정확히 표시됩니다.",
+
+    "rasterize_images": false,
+    "rasterize_images_note": "벡터 그래픽을 래스터화하지 않습니다. 선의 선명도를 유지하고 확대/축소 시에도 품질이 유지됩니다.",
+
+    "embed_images": true,
+    "embed_images_note": "외부 이미지가 있을 경우 PDF 내에 임베드합니다. 파일 이동 시에도 이미지가 손실되지 않습니다.",
+
+    "resolution_dpi": 300,
+    "resolution_dpi_note": "래스터 요소(참조 사진 등)가 포함된 경우 300 DPI 이상으로 설정합니다. 일반적으로 출판 품질 기준입니다.",
+
+    "pdf_version_detail": {
+      "recommended": "PDF/X-1a:2001",
+      "reason": "인쇄 및 출판 표준으로 널리 인정되며, 색상 관리와 글꼴 임베딩을 보장합니다.",
+      "alternative_1": "PDF/A-1b",
+      "alternative_1_reason": "장기 보존 목적. 문서 아카이빙에 적합합니다.",
+      "alternative_2": "PDF 1.4",
+      "alternative_2_reason": "범용 호환성. 대부분의 PDF 뷰어에서 열립니다."
+    },
+
+    "color_management": {
+      "color_profile": "sRGB 또는 Grayscale",
+      "color_profile_note": "석기 도면은 흑백이므로 Grayscale 프로필이 적합합니다. 하지만 sRGB로 내보내도 무방합니다.",
+      "cmyk_conversion": false,
+      "cmyk_conversion_note": "출판사에서 CMYK 변환을 요구하는 경우를 제외하고는 RGB 또는 Grayscale 유지"
+    },
+
+    "page_settings": {
+      "page_size": "A4 (210×297 mm) 또는 A3 (297×420 mm)",
+      "page_size_note": "템플릿 기본값은 A4입니다. 필요시 A3로 변경 가능합니다.",
+      "orientation": "Portrait (세로) 또는 Landscape (가로)",
+      "orientation_note": "석기 형태에 따라 선택합니다. 일반적으로 세로가 많이 사용됩니다.",
+      "margins": "10 mm",
+      "margins_note": "여백은 최소 10mm 이상 확보를 권장합니다."
+    },
+
+    "export_area": {
+      "export_area": "page",
+      "export_area_note": "전체 페이지를 내보냅니다. 'drawing' 옵션은 객체만 내보내므로 여백이 사라집니다.",
+      "alternative": "drawing",
+      "alternative_note": "도면 객체만 내보내고 싶을 경우 사용. 여백 없이 밀착됩니다."
+    },
+
+    "layer_visibility": {
+      "10_GUIDES_layer": "hidden",
+      "10_GUIDES_layer_note": "가이드 레이어(10_GUIDES)는 반드시 숨김 처리하여 내보냅니다. 참조 사진이 출력되지 않도록 주의하세요.",
+      "other_layers": "visible",
+      "other_layers_note": "01_OUTLINE부터 09_LEGEND까지의 레이어는 모두 보이기 상태로 내보냅니다."
+    }
+  },
+
+  "inkscape_cli_examples": {
+    "_comment": "Inkscape 명령줄 인터페이스 사용 예시",
+
+    "example_1_basic_pdf": {
+      "description": "기본 PDF 내보내기 (벡터 유지)",
+      "command": "inkscape --export-type=pdf --export-filename=output.pdf input.svg"
+    },
+
+    "example_2_pdf_with_text_to_path": {
+      "description": "텍스트를 패스로 변환하여 PDF 내보내기",
+      "command": "inkscape --export-type=pdf --export-text-to-path --export-filename=output.pdf input.svg"
+    },
+
+    "example_3_pdf_version": {
+      "description": "특정 PDF 버전으로 내보내기",
+      "command": "inkscape --export-type=pdf --export-pdf-version=1.4 --export-text-to-path --export-filename=output.pdf input.svg"
+    },
+
+    "example_4_high_res_pdf": {
+      "description": "고해상도 PDF 내보내기 (래스터 요소 포함 시)",
+      "command": "inkscape --export-type=pdf --export-dpi=300 --export-text-to-path --export-filename=output.pdf input.svg"
+    },
+
+    "example_5_page_export": {
+      "description": "전체 페이지 영역 내보내기",
+      "command": "inkscape --export-type=pdf --export-area-page --export-text-to-path --export-filename=output.pdf input.svg"
+    },
+
+    "example_6_batch_export": {
+      "description": "여러 파일 일괄 내보내기 (Bash 스크립트)",
+      "command": "for file in *.svg; do inkscape --export-type=pdf --export-text-to-path --export-filename=\"${file%.svg}.pdf\" \"$file\"; done"
+    },
+
+    "example_7_png_export": {
+      "description": "고해상도 PNG 내보내기 (웹 미리보기용)",
+      "command": "inkscape --export-type=png --export-dpi=300 --export-filename=output.png input.svg"
+    },
+
+    "example_8_optimized_svg": {
+      "description": "최적화된 SVG로 저장 (파일 크기 감소)",
+      "command": "inkscape --export-type=svg --export-plain-svg --export-filename=output_optimized.svg input.svg"
+    }
+  },
+
+  "inkscape_gui_instructions": {
+    "_comment": "Inkscape GUI에서 PDF 내보내기 설정 방법",
+
+    "step_1": {
+      "action": "파일 → PDF로 저장 (Ctrl+Shift+S)",
+      "description": "PDF 내보내기 대화상자를 엽니다."
+    },
+
+    "step_2": {
+      "action": "PDF 버전 선택",
+      "options": [
+        "PDF 1.4 (범용 호환성)",
+        "PDF/X-1a (인쇄 표준)",
+        "PDF/A (보존 표준)"
+      ],
+      "recommendation": "PDF/X-1a 권장"
+    },
+
+    "step_3": {
+      "action": "텍스트 옵션 설정",
+      "setting": "텍스트를 패스로 변환",
+      "value": "체크",
+      "reason": "글꼴 호환성 문제 방지"
+    },
+
+    "step_4": {
+      "action": "이미지 옵션 설정",
+      "setting": "이미지 래스터화",
+      "value": "체크 해제",
+      "reason": "벡터 품질 유지"
+    },
+
+    "step_5": {
+      "action": "해상도 설정 (래스터 요소가 있을 경우)",
+      "setting": "래스터 해상도",
+      "value": "300 DPI 이상",
+      "reason": "출판 품질 확보"
+    },
+
+    "step_6": {
+      "action": "내보내기 영역 선택",
+      "setting": "내보내기 영역",
+      "value": "페이지",
+      "reason": "여백 포함 전체 페이지 내보내기"
+    },
+
+    "step_7": {
+      "action": "레이어 확인",
+      "setting": "10_GUIDES 레이어 숨김",
+      "value": "숨김 처리",
+      "reason": "참조 사진 제외"
+    },
+
+    "step_8": {
+      "action": "저장",
+      "file_naming": "유적명_유물번호_날짜.pdf",
+      "example": "jeonggok_JG2024-001_20250115.pdf"
+    }
+  },
+
+  "quality_assurance": {
+    "_comment": "PDF 내보내기 후 품질 확인 항목",
+
+    "checklist": [
+      {
+        "item": "PDF를 Adobe Acrobat 또는 PDF 뷰어로 열기",
+        "check": "모든 요소가 정확히 표시되는지 확인"
+      },
+      {
+        "item": "확대 (300% 이상)",
+        "check": "선이 흐릿하지 않고 선명한지 확인 (벡터 유지 확인)"
+      },
+      {
+        "item": "텍스트 선택 시도",
+        "check": "텍스트가 패스로 변환되었으면 선택되지 않아야 함"
+      },
+      {
+        "item": "레이어 확인",
+        "check": "10_GUIDES 레이어(참조 사진)가 보이지 않는지 확인"
+      },
+      {
+        "item": "스케일바 측정",
+        "check": "PDF 측정 도구로 스케일바를 측정하여 정확한지 확인"
+      },
+      {
+        "item": "인쇄 미리보기",
+        "check": "흑백 출력 시뮬레이션에서 모든 요소가 명확히 구분되는지 확인"
+      },
+      {
+        "item": "파일 크기 확인",
+        "check": "파일 크기가 적절한지 확인 (일반적으로 100KB~5MB 범위)"
+      },
+      {
+        "item": "메타데이터 확인",
+        "check": "PDF 속성에 제목, 작성자 정보가 포함되어 있는지 확인"
+      }
+    ]
+  },
+
+  "troubleshooting": {
+    "_comment": "PDF 내보내기 문제 해결",
+
+    "problem_1": {
+      "issue": "선이 흐릿하게 보임",
+      "solution": [
+        "이미지 래스터화 옵션이 체크되어 있는지 확인 → 체크 해제",
+        "PDF 뷰어의 부드러운 선 표시 옵션 끄기",
+        "Adobe Acrobat에서 편집 → 환경설정 → 페이지 표시 → 부드러운 선 이미지 해제"
+      ]
+    },
+
+    "problem_2": {
+      "issue": "글꼴이 깨지거나 다르게 보임",
+      "solution": [
+        "텍스트를 패스로 변환 옵션 체크",
+        "또는 사용된 글꼴을 PDF에 임베드"
+      ]
+    },
+
+    "problem_3": {
+      "issue": "참조 사진이 PDF에 포함됨",
+      "solution": [
+        "내보내기 전 10_GUIDES 레이어를 숨김 처리",
+        "레이어 패널에서 눈 아이콘 클릭하여 숨기기"
+      ]
+    },
+
+    "problem_4": {
+      "issue": "스케일바 크기가 부정확함",
+      "solution": [
+        "SVG 파일에서 스케일바 크기 재확인",
+        "문서 단위가 mm인지 확인",
+        "내보내기 시 배율이 100%인지 확인"
+      ]
+    },
+
+    "problem_5": {
+      "issue": "파일 크기가 너무 큼",
+      "solution": [
+        "참조 사진 해상도 낮추기 (가이드 레이어)",
+        "불필요한 숨겨진 객체 삭제",
+        "편집 → 선택 → 같은 → 채우기 색상 → 투명 객체 삭제"
+      ]
+    },
+
+    "problem_6": {
+      "issue": "선 두께가 다르게 보임",
+      "solution": [
+        "문서 단위와 내보내기 단위 일치 확인",
+        "파일 → 문서 속성 → 기본 단위: mm 설정",
+        "stroke-width 단위가 mm인지 확인"
+      ]
+    }
+  },
+
+  "standards_compliance": {
+    "_comment": "표준 준수 확인",
+
+    "international_standards": [
+      "Flint Paper Digital - CIfA Guidelines",
+      "Sidestone Press - Archaeological Illustration Handbook",
+      "Cambridge - Stone Tools in the Paleolithic and Neolithic Near East",
+      "Lithics Journal - Standards and Best Practices",
+      "Peer Community Journal - Lithic Illustration Conventions"
+    ],
+
+    "pdf_standards": [
+      "PDF/X-1a:2001 - 인쇄 표준",
+      "PDF/A-1b - 장기 보존 표준",
+      "ISO 19005-1 - 전자 문서 보존 표준"
+    ],
+
+    "publication_requirements": {
+      "academic_journals": {
+        "format": "PDF 또는 고해상도 TIFF",
+        "resolution": "300 DPI 이상",
+        "color_mode": "Grayscale 또는 RGB",
+        "vector_preferred": true,
+        "font_embedding": "Required"
+      },
+
+      "book_publishers": {
+        "format": "PDF/X-1a 또는 EPS",
+        "resolution": "300-600 DPI",
+        "color_mode": "CMYK 또는 Grayscale",
+        "bleed": "3-5 mm (출혈 영역)",
+        "font_embedding": "Required"
+      },
+
+      "online_repositories": {
+        "format": "PDF/A (보존) + PNG (미리보기)",
+        "resolution": "300 DPI",
+        "color_mode": "sRGB",
+        "metadata": "Required (저자, 날짜, 키워드)"
+      }
+    }
+  },
+
+  "version_info": {
+    "settings_version": "1.0.0",
+    "date": "2025",
+    "compatible_inkscape_versions": [
+      "1.0.x",
+      "1.1.x",
+      "1.2.x",
+      "1.3.x"
+    ],
+    "last_updated": "2025-01-15",
+    "author": "Claude Code - Lithic Inkscape Minimal Skill"
+  }
+}

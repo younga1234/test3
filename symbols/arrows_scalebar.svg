@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  구석기 석기 일러스트 심볼 라이브러리 v1.0.0
+
+  이 파일에는 석기 도면에 사용되는 표준 심볼이 포함되어 있습니다:
+  - 스케일바 (1cm, 5mm 옵션)
+  - 북화살표 (North Arrow)
+  - 방향 화살표 (Direction Arrow)
+  - 헤르츠 콘 화살표 (Hertzian Cone Marker)
+
+  Inkscape에서 파일 → 가져오기로 이 파일을 불러온 후 필요한 심볼을 복사하여 사용하세요.
+-->
+<svg
+   width="250mm"
+   height="200mm"
+   viewBox="0 0 250 200"
+   version="1.1"
+   id="svg-symbols"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+
+  <defs id="defs1">
+    <style type="text/css">
+      .symbol-label {
+        font-family: 'Noto Sans CJK KR', 'Liberation Sans', sans-serif;
+        font-size: 3mm;
+        fill: #000000;
+        font-weight: bold;
+      }
+      .symbol-description {
+        font-family: 'Noto Sans CJK KR', 'Liberation Sans', sans-serif;
+        font-size: 2.5mm;
+        fill: #666666;
+      }
+      .scale-text {
+        font-family: 'Noto Sans CJK KR', 'Liberation Sans', sans-serif;
+        font-size: 2mm;
+        fill: #000000;
+      }
+    </style>
+  </defs>
+
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="1.0"
+     inkscape:document-units="mm"
+     showgrid="false" />
+
+  <title>구석기 석기 일러스트 심볼 라이브러리</title>
+
+  <!-- 제목 -->
+  <text x="10" y="10" style="font-size:5mm;font-weight:bold;font-family:sans-serif">
+    구석기 석기 일러스트 심볼 라이브러리 v1.0.0
+  </text>
+  <text x="10" y="16" class="symbol-description">
+    필요한 심볼을 선택하여 복사(Ctrl+C)하고 작업 도면에 붙여넣기(Ctrl+V)하세요.
+  </text>
+
+  <!-- ========== 스케일바 섹션 ========== -->
+  <g id="scalebar-section">
+    <text x="10" y="30" class="symbol-label">1. 스케일바 (Scale Bar)</text>
+
+    <!-- 스케일바 1cm (10mm) 분절형 -->
+    <g id="scalebar-1cm-segmented" transform="translate(10, 40)">
+      <text x="0" y="-3" class="symbol-description">1cm 분절형 (5개 세그먼트 × 2mm)</text>
+      <rect x="0" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <rect x="2" y="0" width="2" height="4" fill="none" stroke="#000000" stroke-width="0.3" />
+      <rect x="4" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <rect x="6" y="0" width="2" height="4" fill="none" stroke="#000000" stroke-width="0.3" />
+      <rect x="8" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <text x="0" y="7" class="scale-text">0</text>
+      <text x="8.5" y="7" class="scale-text" text-anchor="end">1 cm</text>
+    </g>
+
+    <!-- 스케일바 5mm 분절형 -->
+    <g id="scalebar-5mm-segmented" transform="translate(10, 60)">
+      <text x="0" y="-3" class="symbol-description">5mm 분절형 (5개 세그먼트 × 1mm)</text>
+      <rect x="0" y="0" width="1" height="3" fill="#000000" stroke="none" />
+      <rect x="1" y="0" width="1" height="3" fill="none" stroke="#000000" stroke-width="0.25" />
+      <rect x="2" y="0" width="1" height="3" fill="#000000" stroke="none" />
+      <rect x="3" y="0" width="1" height="3" fill="none" stroke="#000000" stroke-width="0.25" />
+      <rect x="4" y="0" width="1" height="3" fill="#000000" stroke="none" />
+      <text x="0" y="6" class="scale-text">0</text>
+      <text x="4.5" y="6" class="scale-text" text-anchor="end">5 mm</text>
+    </g>
+
+    <!-- 스케일바 2cm 분절형 -->
+    <g id="scalebar-2cm-segmented" transform="translate(10, 80)">
+      <text x="0" y="-3" class="symbol-description">2cm 분절형 (10개 세그먼트 × 2mm)</text>
+      <rect x="0" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <rect x="2" y="0" width="2" height="4" fill="none" stroke="#000000" stroke-width="0.3" />
+      <rect x="4" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <rect x="6" y="0" width="2" height="4" fill="none" stroke="#000000" stroke-width="0.3" />
+      <rect x="8" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <rect x="10" y="0" width="2" height="4" fill="none" stroke="#000000" stroke-width="0.3" />
+      <rect x="12" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <rect x="14" y="0" width="2" height="4" fill="none" stroke="#000000" stroke-width="0.3" />
+      <rect x="16" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <rect x="18" y="0" width="2" height="4" fill="none" stroke="#000000" stroke-width="0.3" />
+      <text x="0" y="7" class="scale-text">0</text>
+      <text x="10" y="7" class="scale-text" text-anchor="middle">1</text>
+      <text x="18.5" y="7" class="scale-text" text-anchor="end">2 cm</text>
+    </g>
+
+    <!-- 스케일바 3cm 분절형 -->
+    <g id="scalebar-3cm-segmented" transform="translate(10, 100)">
+      <text x="0" y="-3" class="symbol-description">3cm 분절형 (15개 세그먼트 × 2mm)</text>
+      <rect x="0" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <rect x="2" y="0" width="2" height="4" fill="none" stroke="#000000" stroke-width="0.3" />
+      <rect x="4" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <rect x="6" y="0" width="2" height="4" fill="none" stroke="#000000" stroke-width="0.3" />
+      <rect x="8" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <rect x="10" y="0" width="2" height="4" fill="none" stroke="#000000" stroke-width="0.3" />
+      <rect x="12" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <rect x="14" y="0" width="2" height="4" fill="none" stroke="#000000" stroke-width="0.3" />
+      <rect x="16" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <rect x="18" y="0" width="2" height="4" fill="none" stroke="#000000" stroke-width="0.3" />
+      <rect x="20" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <rect x="22" y="0" width="2" height="4" fill="none" stroke="#000000" stroke-width="0.3" />
+      <rect x="24" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <rect x="26" y="0" width="2" height="4" fill="none" stroke="#000000" stroke-width="0.3" />
+      <rect x="28" y="0" width="2" height="4" fill="#000000" stroke="none" />
+      <text x="0" y="7" class="scale-text">0</text>
+      <text x="10" y="7" class="scale-text" text-anchor="middle">1</text>
+      <text x="20" y="7" class="scale-text" text-anchor="middle">2</text>
+      <text x="28.5" y="7" class="scale-text" text-anchor="end">3 cm</text>
+    </g>
+  </g>
+
+  <!-- ========== 북화살표 섹션 ========== -->
+  <g id="north-arrow-section">
+    <text x="120" y="30" class="symbol-label">2. 북화살표 (North Arrow)</text>
+
+    <!-- 북화살표 스타일 1: 단순 화살표 -->
+    <g id="north-arrow-simple" transform="translate(120, 40)">
+      <text x="0" y="-3" class="symbol-description">단순 북화살표</text>
+      <!-- 화살표 몸통 -->
+      <line x1="5" y1="20" x2="5" y2="2" stroke="#000000" stroke-width="0.4" stroke-linecap="round" />
+      <!-- 화살표 머리 -->
+      <path d="M 5,0 L 2,4 L 5,2 L 8,4 Z" fill="#000000" stroke="none" />
+      <text x="5" y="25" class="scale-text" text-anchor="middle">N</text>
+    </g>
+
+    <!-- 북화살표 스타일 2: 채움 화살표 -->
+    <g id="north-arrow-filled" transform="translate(145, 40)">
+      <text x="0" y="-3" class="symbol-description">채움 북화살표</text>
+      <path d="M 5,0 L 8,20 L 5,18 L 2,20 Z" fill="#000000" stroke="#000000" stroke-width="0.3" stroke-linejoin="miter" />
+      <text x="5" y="25" class="scale-text" text-anchor="middle">N</text>
+    </g>
+
+    <!-- 북화살표 스타일 3: 나침반 스타일 -->
+    <g id="north-arrow-compass" transform="translate(170, 40)">
+      <text x="0" y="-3" class="symbol-description">나침반 스타일</text>
+      <circle cx="5" cy="10" r="8" fill="none" stroke="#000000" stroke-width="0.3" />
+      <path d="M 5,2 L 7,10 L 5,9 L 3,10 Z" fill="#000000" stroke="none" />
+      <text x="5" y="1" class="scale-text" text-anchor="middle" font-weight="bold">N</text>
+    </g>
+  </g>
+
+  <!-- ========== 방향 화살표 섹션 ========== -->
+  <g id="direction-arrow-section">
+    <text x="120" y="70" class="symbol-label">3. 방향 화살표 (Direction Markers)</text>
+
+    <!-- 일반 방향 화살표 -->
+    <g id="direction-arrow-simple" transform="translate(120, 80)">
+      <text x="0" y="-3" class="symbol-description">일반 방향 화살표</text>
+      <line x1="0" y1="5" x2="15" y2="5" stroke="#000000" stroke-width="0.4" stroke-linecap="round" />
+      <path d="M 15,5 L 12,3 L 13,5 L 12,7 Z" fill="#000000" stroke="none" />
+    </g>
+
+    <!-- 헤르츠 콘 원 마커 -->
+    <g id="hertzian-cone-marker" transform="translate(120, 100)">
+      <text x="0" y="-3" class="symbol-description">헤르츠 콘 원 마커 (타격 방향)</text>
+      <circle cx="5" cy="5" r="3" fill="none" stroke="#000000" stroke-width="0.4" />
+      <line x1="8" y1="5" x2="18" y2="5" stroke="#000000" stroke-width="0.4" stroke-linecap="round" />
+      <path d="M 18,5 L 15,3 L 16,5 L 15,7 Z" fill="#000000" stroke="none" />
+    </g>
+
+    <!-- 양방향 화살표 -->
+    <g id="direction-arrow-bidirectional" transform="translate(120, 120)">
+      <text x="0" y="-3" class="symbol-description">양방향 화살표</text>
+      <line x1="0" y1="5" x2="20" y2="5" stroke="#000000" stroke-width="0.4" stroke-linecap="round" />
+      <path d="M 0,5 L 3,3 L 2,5 L 3,7 Z" fill="#000000" stroke="none" />
+      <path d="M 20,5 L 17,3 L 18,5 L 17,7 Z" fill="#000000" stroke="none" />
+    </g>
+
+    <!-- 곡선 방향 화살표 -->
+    <g id="direction-arrow-curved" transform="translate(120, 140)">
+      <text x="0" y="-3" class="symbol-description">곡선 방향 화살표 (회전 표시)</text>
+      <path d="M 0,10 Q 10,0 20,10" fill="none" stroke="#000000" stroke-width="0.4" stroke-linecap="round" />
+      <path d="M 20,10 L 17,9 L 18.5,11 L 17,13 Z" fill="#000000" stroke="none" />
+    </g>
+  </g>
+
+  <!-- ========== 단면 표시 기호 ========== -->
+  <g id="section-marker-section">
+    <text x="10" y="125" class="symbol-label">4. 단면 표시 기호 (Section Markers)</text>
+
+    <!-- 단면선 -->
+    <g id="section-line-marker" transform="translate(10, 135)">
+      <text x="0" y="-3" class="symbol-description">단면선 마커 (끝점 표시)</text>
+      <line x1="0" y1="5" x2="20" y2="5" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-dasharray="2,1" />
+      <line x1="0" y1="2" x2="0" y2="8" stroke="#000000" stroke-width="0.5" stroke-linecap="round" />
+      <line x1="20" y1="2" x2="20" y2="8" stroke="#000000" stroke-width="0.5" stroke-linecap="round" />
+      <text x="0" y="12" class="scale-text" text-anchor="start">A</text>
+      <text x="20" y="12" class="scale-text" text-anchor="end">A'</text>
+    </g>
+
+    <!-- 단면 방향 표시 -->
+    <g id="section-direction-marker" transform="translate(10, 155)">
+      <text x="0" y="-3" class="symbol-description">단면 보기 방향 (화살표)</text>
+      <line x1="10" y1="0" x2="10" y2="10" stroke="#000000" stroke-width="0.5" stroke-linecap="round" />
+      <path d="M 10,10 L 7,7 L 10,8 L 13,7 Z" fill="#000000" stroke="none" />
+      <text x="10" y="15" class="scale-text" text-anchor="middle">보기 방향</text>
+    </g>
+  </g>
+
+  <!-- ========== 사용 안내 ========== -->
+  <rect x="5" y="170" width="240" height="25" fill="#f0f0f0" stroke="#000000" stroke-width="0.2" />
+  <text x="10" y="176" class="symbol-label">사용 안내</text>
+  <text x="10" y="181" class="symbol-description">
+    <tspan x="10" dy="0">• 각 심볼을 Inkscape에서 선택하고 Ctrl+C로 복사한 후 작업 도면에 Ctrl+V로 붙여넣기</tspan>
+    <tspan x="10" dy="3.5">• 스케일바는 실제 측정 크기와 일치하도록 배치 (예: 1cm 스케일바 = 실제 10mm)</tspan>
+    <tspan x="10" dy="3.5">• 북화살표는 도면 우측 상단 또는 범례 영역에 배치</tspan>
+    <tspan x="10" dy="3.5">• 헤르츠 콘 마커는 타격 방향을 나타낼 때 사용 (원이 타격점, 화살표가 충격 전파 방향)</tspan>
+  </text>
+</svg>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  구석기 석기 일러스트 표준 선 스타일 참조 v1.0.0
+
+  이 파일은 Inkscape에서 스타일을 복사하여 사용할 수 있는 참조 샘플입니다.
+  각 선의 스타일을 복사하여 작업 도면에 적용하세요.
+-->
+<svg
+   width="200mm"
+   height="150mm"
+   viewBox="0 0 200 150"
+   version="1.1"
+   id="svg-line-styles"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+
+  <defs id="defs1">
+    <style type="text/css">
+      .label {
+        font-family: 'Noto Sans CJK KR', 'Liberation Sans', sans-serif;
+        font-size: 3.5mm;
+        fill: #000000;
+      }
+      .description {
+        font-family: 'Noto Sans CJK KR', 'Liberation Sans', sans-serif;
+        font-size: 2.5mm;
+        fill: #666666;
+      }
+    </style>
+  </defs>
+
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="1.0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="400"
+     inkscape:cy="300" />
+
+  <title>구석기 석기 일러스트 표준 선 스타일 참조</title>
+
+  <!-- 제목 -->
+  <text x="10" y="10" class="label" style="font-size:5mm;font-weight:bold">
+    구석기 석기 일러스트 표준 선 스타일 참조 v1.0.0
+  </text>
+  <text x="10" y="16" class="description">
+    각 선 스타일을 선택하고 복사(Ctrl+C)하여 작업 도면에 붙여넣기(Ctrl+V)한 후 스타일을 적용하세요.
+  </text>
+
+  <!-- 스타일 1: 외곽선 (OUTLINE) - 0.45mm -->
+  <g id="style-outline" transform="translate(10, 25)">
+    <text x="0" y="0" class="label">1. 외곽선 (Outline)</text>
+    <text x="0" y="5" class="description">0.45mm | 석기 외곽 윤곽선</text>
+    <line
+      x1="0" y1="10" x2="60" y2="10"
+      style="stroke:#000000;stroke-width:0.45mm;stroke-linecap:round;stroke-linejoin:round;fill:none"
+      id="sample-outline" />
+    <text x="65" y="11" class="description" style="font-size:2mm">stroke-width: 0.45mm</text>
+  </g>
+
+  <!-- 스타일 2: 박리흔 경계선 (SCARS) - 0.30mm -->
+  <g id="style-scar" transform="translate(10, 45)">
+    <text x="0" y="0" class="label">2. 박리흔 경계선 (Scar Boundaries)</text>
+    <text x="0" y="5" class="description">0.30mm | 격지 제거 흔적 경계</text>
+    <line
+      x1="0" y1="10" x2="60" y2="10"
+      style="stroke:#000000;stroke-width:0.30mm;stroke-linecap:round;stroke-linejoin:round;fill:none"
+      id="sample-scar" />
+    <text x="65" y="11" class="description" style="font-size:2mm">stroke-width: 0.30mm</text>
+  </g>
+
+  <!-- 스타일 3: 파상선 (RIPPLES) - 0.20mm -->
+  <g id="style-ripple" transform="translate(10, 65)">
+    <text x="0" y="0" class="label">3. 파상선 (Ripple Marks)</text>
+    <text x="0" y="5" class="description">0.20mm | 박리면 파상 무늬 (선택)</text>
+    <path
+      d="M 0,10 Q 5,8 10,10 T 20,10 T 30,10 T 40,10 T 50,10 T 60,10"
+      style="stroke:#000000;stroke-width:0.20mm;stroke-linecap:round;stroke-linejoin:round;fill:none"
+      id="sample-ripple" />
+    <text x="65" y="11" class="description" style="font-size:2mm">stroke-width: 0.20mm</text>
+  </g>
+
+  <!-- 스타일 4: 연결선 (LINKING LINES) - 0.15mm -->
+  <g id="style-linking" transform="translate(10, 85)">
+    <text x="0" y="0" class="label">4. 연결선 (Linking Lines)</text>
+    <text x="0" y="5" class="description">0.15mm | 뷰 간 수평 연결선</text>
+    <line
+      x1="0" y1="10" x2="60" y2="10"
+      style="stroke:#000000;stroke-width:0.15mm;stroke-linecap:round;stroke-linejoin:round;fill:none"
+      id="sample-linking" />
+    <text x="65" y="11" class="description" style="font-size:2mm">stroke-width: 0.15mm</text>
+  </g>
+
+  <!-- 스타일 5: 단면 윤곽 (SECTION OUTLINE) - 0.45mm -->
+  <g id="style-section-outline" transform="translate(110, 25)">
+    <text x="0" y="0" class="label">5. 단면 윤곽 (Section Outline)</text>
+    <text x="0" y="5" class="description">0.45mm | 단면도 외곽선</text>
+    <line
+      x1="0" y1="10" x2="60" y2="10"
+      style="stroke:#000000;stroke-width:0.45mm;stroke-linecap:round;stroke-linejoin:round;fill:none"
+      id="sample-section-outline" />
+    <text x="65" y="11" class="description" style="font-size:2mm">stroke-width: 0.45mm</text>
+  </g>
+
+  <!-- 스타일 6: 단면 해칭 (SECTION HATCHING) - 0.20mm -->
+  <g id="style-section-hatching" transform="translate(110, 45)">
+    <text x="0" y="0" class="label">6. 단면 해칭 (Section Hatching)</text>
+    <text x="0" y="5" class="description">0.20mm | 단면 내부 해칭 (45도)</text>
+    <g id="sample-section-hatching">
+      <line x1="0" y1="10" x2="5" y2="15" style="stroke:#000000;stroke-width:0.20mm;stroke-linecap:round;fill:none" />
+      <line x1="5" y1="10" x2="10" y2="15" style="stroke:#000000;stroke-width:0.20mm;stroke-linecap:round;fill:none" />
+      <line x1="10" y1="10" x2="15" y2="15" style="stroke:#000000;stroke-width:0.20mm;stroke-linecap:round;fill:none" />
+      <line x1="15" y1="10" x2="20" y2="15" style="stroke:#000000;stroke-width:0.20mm;stroke-linecap:round;fill:none" />
+      <line x1="20" y1="10" x2="25" y2="15" style="stroke:#000000;stroke-width:0.20mm;stroke-linecap:round;fill:none" />
+      <line x1="25" y1="10" x2="30" y2="15" style="stroke:#000000;stroke-width:0.20mm;stroke-linecap:round;fill:none" />
+      <line x1="30" y1="10" x2="35" y2="15" style="stroke:#000000;stroke-width:0.20mm;stroke-linecap:round;fill:none" />
+      <line x1="35" y1="10" x2="40" y2="15" style="stroke:#000000;stroke-width:0.20mm;stroke-linecap:round;fill:none" />
+      <line x1="40" y1="10" x2="45" y2="15" style="stroke:#000000;stroke-width:0.20mm;stroke-linecap:round;fill:none" />
+      <line x1="45" y1="10" x2="50" y2="15" style="stroke:#000000;stroke-width:0.20mm;stroke-linecap:round;fill:none" />
+      <line x1="50" y1="10" x2="55" y2="15" style="stroke:#000000;stroke-width:0.20mm;stroke-linecap:round;fill:none" />
+      <line x1="55" y1="10" x2="60" y2="15" style="stroke:#000000;stroke-width:0.20mm;stroke-linecap:round;fill:none" />
+    </g>
+    <text x="65" y="13" class="description" style="font-size:2mm">stroke-width: 0.20mm</text>
+  </g>
+
+  <!-- 스타일 7: 코르텍스 점묘 (CORTEX STIPPLE) - 0.18mm -->
+  <g id="style-cortex-stipple" transform="translate(110, 70)">
+    <text x="0" y="0" class="label">7. 코르텍스 점묘 (Cortex Stipple)</text>
+    <text x="0" y="5" class="description">0.18mm 점 지름 | 자연면 표현</text>
+    <g id="sample-cortex-stipple">
+      <circle cx="2" cy="11" r="0.18" fill="#000000" />
+      <circle cx="6" cy="11" r="0.18" fill="#000000" />
+      <circle cx="10" cy="11" r="0.18" fill="#000000" />
+      <circle cx="14" cy="11" r="0.18" fill="#000000" />
+      <circle cx="18" cy="11" r="0.18" fill="#000000" />
+      <circle cx="22" cy="11" r="0.18" fill="#000000" />
+      <circle cx="26" cy="11" r="0.18" fill="#000000" />
+      <circle cx="30" cy="11" r="0.18" fill="#000000" />
+      <circle cx="34" cy="11" r="0.18" fill="#000000" />
+      <circle cx="38" cy="11" r="0.18" fill="#000000" />
+      <circle cx="42" cy="11" r="0.18" fill="#000000" />
+      <circle cx="46" cy="11" r="0.18" fill="#000000" />
+      <circle cx="50" cy="11" r="0.18" fill="#000000" />
+      <circle cx="54" cy="11" r="0.18" fill="#000000" />
+      <circle cx="58" cy="11" r="0.18" fill="#000000" />
+      <circle cx="4" cy="13" r="0.18" fill="#000000" />
+      <circle cx="8" cy="13" r="0.18" fill="#000000" />
+      <circle cx="12" cy="13" r="0.18" fill="#000000" />
+      <circle cx="16" cy="13" r="0.18" fill="#000000" />
+      <circle cx="20" cy="13" r="0.18" fill="#000000" />
+      <circle cx="24" cy="13" r="0.18" fill="#000000" />
+      <circle cx="28" cy="13" r="0.18" fill="#000000" />
+      <circle cx="32" cy="13" r="0.18" fill="#000000" />
+      <circle cx="36" cy="13" r="0.18" fill="#000000" />
+      <circle cx="40" cy="13" r="0.18" fill="#000000" />
+      <circle cx="44" cy="13" r="0.18" fill="#000000" />
+      <circle cx="48" cy="13" r="0.18" fill="#000000" />
+      <circle cx="52" cy="13" r="0.18" fill="#000000" />
+      <circle cx="56" cy="13" r="0.18" fill="#000000" />
+    </g>
+    <text x="65" y="12" class="description" style="font-size:2mm">circle r: 0.18mm</text>
+  </g>
+
+  <!-- 사용 팁 -->
+  <rect x="5" y="100" width="190" height="45" fill="#f0f0f0" stroke="#000000" stroke-width="0.2" />
+  <text x="10" y="106" class="label" style="font-size:3mm;font-weight:bold">사용 팁</text>
+  <text x="10" y="111" class="description">
+    <tspan x="10" dy="0">• Inkscape에서 각 선 샘플을 선택하고 Ctrl+C로 복사</tspan>
+    <tspan x="10" dy="4">• 작업 도면에 Ctrl+V로 붙여넣기</tspan>
+    <tspan x="10" dy="4">• 스타일 복사: 붙여넣은 선 선택 → 편집 → 스타일 복사 → 대상 객체 선택 → 편집 → 스타일 붙여넣기</tspan>
+    <tspan x="10" dy="4">• 또는 스포이트 도구(D)로 샘플 클릭 후 대상에 적용</tspan>
+    <tspan x="10" dy="4">• 모든 선은 stroke-linecap: round, stroke-linejoin: round 설정</tspan>
+    <tspan x="10" dy="4">• 색상은 항상 #000000 (순수 검정) 유지</tspan>
+  </text>
+
+  <!-- 경고 -->
+  <text x="10" y="140" class="description" style="fill:#cc0000;font-weight:bold">
+    ⚠ 이 규격을 벗어나는 선 두께나 스타일을 사용하지 마세요. 국제 관례 준수가 필수입니다.
+  </text>
+</svg>
