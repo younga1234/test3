@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" width="297mm" height="420mm" viewBox="0 0 297 420" version="1.1" id="svg1" inkscape:version="1.3" sodipodi:docname="lithic_min_a3.svg">
+  <defs id="defs1">
+    
+    <style type="text/css" id="lithic-standard-styles">
+      .outline {
+        fill: none;
+        stroke: #000000;
+        stroke-width: 0.45mm;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .scar {
+        fill: none;
+        stroke: #000000;
+        stroke-width: 0.30mm;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .ripple {
+        fill: none;
+        stroke: #000000;
+        stroke-width: 0.20mm;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .linking {
+        fill: none;
+        stroke: #000000;
+        stroke-width: 0.15mm;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .section-outline {
+        fill: none;
+        stroke: #000000;
+        stroke-width: 0.45mm;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .section-hatching {
+        fill: none;
+        stroke: #000000;
+        stroke-width: 0.20mm;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .cortex-stipple {
+        fill: #000000;
+        stroke: none;
+      }
+      .label-text {
+        font-family: 'Noto Sans CJK KR', 'Liberation Sans', 'Arial', sans-serif;
+        font-size: 8pt;
+        fill: #000000;
+        stroke: none;
+      }
+    </style>
+
+    
+    <pattern id="cortex-stipple-pattern" patternUnits="userSpaceOnUse" width="2" height="2">
+      <circle cx="1" cy="1" r="0.18" fill="#000000" />
+    </pattern>
+
+    
+    <pattern id="section-hatching-pattern" patternUnits="userSpaceOnUse" width="2" height="2" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="2" stroke="#000000" stroke-width="0.20" />
+    </pattern>
+  </defs>
+
+  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="1.0" inkscape:showpageshadow="2" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" showgrid="true" inkscape:zoom="1" inkscape:cx="400" inkscape:cy="400" inkscape:window-width="1920" inkscape:window-height="1080" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="layer01-outline">
+    <inkscape:grid type="xygrid" id="grid1" units="mm" spacingx="1" spacingy="1" empspacing="10" enabled="true" visible="true" snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+
+  <metadata id="metadata1">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>구석기 석기 일러스트 최소 표준 템플릿 (A3)</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Claude Code - Lithic Inkscape Minimal Skill v1.0.0</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:description>국제 구석기 석기 도면 관례 기반 최소 템플릿 (A3 크기).
+          American projection 기준.
+          출처: Flint Paper Digital, Sidestone Press, Cambridge Stone Tools Guide.</dc:description>
+        <dc:date>2025</dc:date>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Public Domain - Archaeological Standards Compliant</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Paleolithic</rdf:li>
+            <rdf:li>Lithic Illustration</rdf:li>
+            <rdf:li>Stone Tools</rdf:li>
+            <rdf:li>Archaeological Drawing</rdf:li>
+            <rdf:li>American Projection</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+
+  
+  <g inkscape:label="01_OUTLINE" inkscape:groupmode="layer" id="layer01-outline" style="display:inline">
+    <title>외곽선 레이어 - 석기 외곽 윤곽선 (0.45mm)</title>
+    
+  </g>
+
+  
+  <g inkscape:label="02_SCARS" inkscape:groupmode="layer" id="layer02-scars" style="display:inline">
+    <title>박리흔 경계선 레이어 - 격지 제거 흔적 경계 (0.30mm)</title>
+    
+  </g>
+
+  
+  <g inkscape:label="03_RIPPLES" inkscape:groupmode="layer" id="layer03-ripples" style="display:inline">
+    <title>파상선 레이어 - 박리면 파상 무늬 (0.20mm, 선택)</title>
+    
+  </g>
+
+  
+  <g inkscape:label="04_CORTEX" inkscape:groupmode="layer" id="layer04-cortex" style="display:inline">
+    <title>코르텍스 점묘 레이어 - 자연면 표현 (0.18mm 점)</title>
+    
+  </g>
+
+  
+  <g inkscape:label="05_SECTION" inkscape:groupmode="layer" id="layer05-section" style="display:inline">
+    <title>단면 레이어 - 세로 단면도 (우측 배치, 윤곽 0.45mm, 해칭 0.20mm)</title>
+    
+  </g>
+
+  
+  <g inkscape:label="06_LINKS" inkscape:groupmode="layer" id="layer06-links" style="display:inline">
+    <title>연결선 레이어 - 뷰 간 수평 연결선 (0.15mm)</title>
+    
+  </g>
+
+  
+  <g inkscape:label="07_SYMBOLS" inkscape:groupmode="layer" id="layer07-symbols" style="display:inline">
+    <title>기호 레이어 - 스케일바, 북화살표, 방향 표시</title>
+    
+  </g>
+
+  
+  <g inkscape:label="08_LABELS" inkscape:groupmode="layer" id="layer08-labels" style="display:inline">
+    <title>라벨 레이어 - 텍스트 주석 및 식별 번호 (7-9pt)</title>
+    
+  </g>
+
+  
+  <g inkscape:label="09_LEGEND" inkscape:groupmode="layer" id="layer09-legend" style="display:inline">
+    <title>범례 레이어 - 기호 설명 및 주석</title>
+    
+  </g>
+
+  
+  <g inkscape:label="10_GUIDES" inkscape:groupmode="layer" id="layer10-guides" style="display:none">
+    <title>가이드 레이어 - 참조 이미지 및 보조선 (비출력)</title>
+    
+  </g>
+
+  
+  <text xml:space="preserve" style="font-size:4mm;font-family:'Noto Sans CJK KR', sans-serif;fill:#666666;stroke:none" x="10" y="20" id="template-info">
+    <tspan sodipodi:role="line" x="10" y="20">구석기 석기 일러스트 최소 표준 템플릿 v1.0.0 (A3 크기)</tspan>
+    <tspan sodipodi:role="line" x="10" y="26">American Projection | 표준 선굵기 준수 | 최소 잉크 원칙</tspan>
+    <tspan sodipodi:role="line" x="10" y="32" style="fill:#000000;font-weight:bold">⚠ 작업 시작 전 이 안내문을 삭제하세요</tspan>
+    <tspan sodipodi:role="line" x="10" y="40" style="font-size:3mm">사용 순서:</tspan>
+    <tspan sodipodi:role="line" x="10" y="45" style="font-size:3mm">1. 10_GUIDES에 참조 사진 배치</tspan>
+    <tspan sodipodi:role="line" x="10" y="50" style="font-size:3mm">2. 01_OUTLINE: 외곽선 (0.45mm)</tspan>
+    <tspan sodipodi:role="line" x="10" y="55" style="font-size:3mm">3. 02_SCARS: 박리흔 (0.30mm)</tspan>
+    <tspan sodipodi:role="line" x="10" y="60" style="font-size:3mm">4. 03_RIPPLES: 파상선 (0.20mm, 선택)</tspan>
+    <tspan sodipodi:role="line" x="10" y="65" style="font-size:3mm">5. 04_CORTEX: 코르텍스 점묘 (0.18mm)</tspan>
+    <tspan sodipodi:role="line" x="10" y="70" style="font-size:3mm">6. 05_SECTION: 단면 (우측, 0.45mm)</tspan>
+    <tspan sodipodi:role="line" x="10" y="75" style="font-size:3mm">7. 06_LINKS: 연결선 (수평, 0.15mm)</tspan>
+    <tspan sodipodi:role="line" x="10" y="80" style="font-size:3mm">8. 07_SYMBOLS: 스케일바, 북화살표</tspan>
+    <tspan sodipodi:role="line" x="10" y="85" style="font-size:3mm">9. 08_LABELS: 라벨 (7-9pt)</tspan>
+    <tspan sodipodi:role="line" x="10" y="90" style="font-size:3mm">10. 09_LEGEND: 범례</tspan>
+    <tspan sodipodi:role="line" x="10" y="95" style="font-size:3mm">11. docs/checklist.md로 검증</tspan>
+    <tspan sodipodi:role="line" x="10" y="100" style="font-size:3mm">12. PDF/SVG 내보내기</tspan>
+  </text>
+</svg>

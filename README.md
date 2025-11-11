@@ -38,14 +38,21 @@
 │       └── lithic-inkscape/
 │           └── SKILL.md                    # Claude Code Skill 정의
 ├── templates/
-│   └── lithic_min.svg                      # 최소 표준 템플릿 (레이어, 스타일 포함)
+│   ├── lithic_min.svg                      # A4 최소 표준 템플릿
+│   ├── lithic_min_a3.svg                   # A3 최소 표준 템플릿 (큰 석기용)
+│   └── example_lithic.svg                  # 예제 도면
 ├── styles/
 │   └── line_styles.svg                     # 표준 선 스타일 참조
 ├── symbols/
 │   └── arrows_scalebar.svg                 # 심볼 라이브러리 (스케일바, 화살표 등)
 ├── docs/
-│   ├── usage.md                            # 상세 사용 가이드 (한국어)
-│   └── checklist.md                        # 검증 체크리스트 (한국어)
+│   ├── quick_reference.md                  # 빠른 참조 카드 (1페이지 요약)
+│   ├── tutorial.md                         # 단계별 튜토리얼 (초보자용)
+│   ├── usage.md                            # 상세 사용 가이드
+│   ├── checklist.md                        # 검증 체크리스트
+│   └── faq.md                              # 자주 묻는 질문
+├── scripts/
+│   └── validate_lithic.py                  # 자동 검증 스크립트
 ├── export/
 │   └── pdf_settings.json                   # PDF 내보내기 권장 설정
 └── refs/
@@ -86,6 +93,69 @@ inkscape templates/lithic_min.svg
 1. `docs/checklist.md`로 표준 준수 확인
 2. **파일 → PDF로 저장**
 3. 설정: `export/pdf_settings.json` 참조
+
+---
+
+## 🆕 새로 추가된 기능 (v1.0.0)
+
+### 📖 빠른 참조 카드 (`docs/quick_reference.md`)
+
+1페이지 요약 문서로 가장 자주 사용하는 정보를 빠르게 참조할 수 있습니다:
+- 표준 선굵기 일람표
+- 레이어 순서 요약
+- 필수 규칙 체크리스트
+- Inkscape 단축키
+- 흔한 오류와 해결책
+
+**언제 사용:** 작업 중 빠른 참조가 필요할 때
+
+### 🎓 단계별 튜토리얼 (`docs/tutorial.md`)
+
+처음 사용하는 분들을 위한 상세한 36단계 가이드:
+- 준비부터 완성까지 전 과정
+- 스크린샷 대신 명확한 텍스트 설명
+- 팁과 요령 포함
+- 예상 소요 시간: 30-60분
+
+**언제 사용:** 첫 도면을 작성할 때
+
+### ❓ FAQ (`docs/faq.md`)
+
+32개의 자주 묻는 질문과 답변:
+- 일반 질문 (템플릿 용도, 라이선스 등)
+- 템플릿 사용법 (시작, A3 템플릿 등)
+- 선 스타일 적용 (선굵기, 단위 등)
+- 레이어 관리 (순서, 추가 등)
+- 심볼 사용 (스케일바, 북화살표 등)
+- 내보내기 (PDF, 문제 해결 등)
+- 표준 준수 (American Projection, 규칙 등)
+
+**언제 사용:** 문제가 발생했거나 궁금한 점이 있을 때
+
+### ✅ 자동 검증 스크립트 (`scripts/validate_lithic.py`)
+
+SVG 파일의 표준 준수를 자동으로 검증하는 Python 스크립트:
+
+```bash
+# 사용법
+python3 scripts/validate_lithic.py <SVG_파일>
+
+# 예제
+python3 scripts/validate_lithic.py templates/lithic_min.svg
+python3 scripts/validate_lithic.py my_drawing.svg
+```
+
+**검증 항목:** 페이지 크기, 단위, 레이어 구조, 선 두께, 색상, 메타데이터
+
+**언제 사용:** 작업 완료 후 제출 전 최종 검증
+
+### 📏 A3 템플릿 (`templates/lithic_min_a3.svg`)
+
+큰 석기 작업용 A3 크기 (297mm × 420mm) 템플릿:
+- A4 템플릿과 동일한 레이어 구조 및 표준 선굵기
+- 더 큰 작업 공간 제공
+
+**언제 사용:** 30cm 이상의 대형 석기 작업 시
 
 ---
 

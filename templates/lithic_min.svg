@@ -285,7 +285,7 @@
      id="template-info">
     <tspan sodipodi:role="line" x="10" y="20">구석기 석기 일러스트 최소 표준 템플릿 v1.0.0</tspan>
     <tspan sodipodi:role="line" x="10" y="26">American Projection | 표준 선굵기 준수 | 최소 잉크 원칙</tspan>
-    <tspan sodipodi:role="line" x="10" y="32" style="fill:#cc0000">⚠ 작업 시작 전 이 안내문을 삭제하세요</tspan>
+    <tspan sodipodi:role="line" x="10" y="32" style="fill:#000000;font-weight:bold">⚠ 작업 시작 전 이 안내문을 삭제하세요</tspan>
     <tspan sodipodi:role="line" x="10" y="40" style="font-size:3mm">사용 순서:</tspan>
     <tspan sodipodi:role="line" x="10" y="45" style="font-size:3mm">1. 10_GUIDES에 참조 사진 배치</tspan>
     <tspan sodipodi:role="line" x="10" y="50" style="font-size:3mm">2. 01_OUTLINE: 외곽선 (0.45mm)</tspan>
