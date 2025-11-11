@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서 뷰어 - 석기 일러스트 템플릿</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Additional Styles for Document Viewer */
+        .nav-bar {
+            position: sticky;
+            top: 0;
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border);
+            padding: var(--spacing-md) 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--spacing-md);
+        }
+
+        .nav-title {
+            font-size: var(--font-size-lg);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0;
+        }
+
+        .nav-back {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            padding: 12px 20px;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            transition: all 0.2s ease;
+            min-height: 48px;
+        }
+
+        .nav-back:hover {
+            background: var(--border);
+        }
+
+        .doc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+        }
+
+        .doc-card {
+            background: var(--bg-primary);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: 0 2px 12px var(--shadow);
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .doc-card:active {
+            transform: scale(0.98);
+        }
+
+        .doc-header {
+            padding: var(--spacing-lg);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .doc-header.alt-1 {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .doc-header.alt-2 {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .doc-header.alt-3 {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+
+        .doc-header.alt-4 {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+
+        .doc-header.alt-5 {
+            background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+        }
+
+        .doc-icon {
+            font-size: 56px;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .doc-title {
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .doc-body {
+            padding: var(--spacing-lg);
+            flex: 1;
+        }
+
+        .doc-description {
+            color: var(--text-secondary);
+            font-size: var(--font-size-base);
+            line-height: 1.6;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .doc-meta-list {
+            list-style: none;
+            margin: var(--spacing-md) 0;
+        }
+
+        .doc-meta-list li {
+            padding: var(--spacing-xs) 0;
+            color: var(--text-secondary);
+            font-size: var(--font-size-sm);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+
+        .doc-meta-list li::before {
+            content: "→";
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .doc-footer {
+            padding: var(--spacing-md) var(--spacing-lg);
+            border-top: 1px solid var(--border);
+        }
+
+        .doc-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 16px;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            font-weight: 700;
+            font-size: var(--font-size-base);
+            transition: all 0.2s ease;
+            min-height: 56px;
+        }
+
+        .doc-button:hover {
+            background: var(--accent-hover);
+        }
+
+        .doc-button:active {
+            transform: scale(0.96);
+        }
+
+        @media (max-width: 768px) {
+            .doc-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <h1 class="nav-title">📚 문서 뷰어</h1>
+            <a href="index.html" class="nav-back">← 홈으로</a>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Intro Section -->
+        <section class="section">
+            <div class="info-box">
+                <h2 class="info-title">모든 문서를 한눈에</h2>
+                <p>구석기 석기 일러스트 작업에 필요한 모든 문서를 쉽게 찾아보세요. 각 문서는 특정 목적에 맞게 작성되었습니다.</p>
+            </div>
+        </section>
+
+        <!-- Documents Grid -->
+        <div class="doc-grid">
+            <!-- Quick Reference -->
+            <div class="doc-card">
+                <div class="doc-header">
+                    <div class="doc-icon">⚡</div>
+                    <h2 class="doc-title">빠른 참조</h2>
+                </div>
+                <div class="doc-body">
+                    <p class="doc-description">
+                        가장 자주 사용하는 정보를 1페이지로 압축한 참조 카드입니다.
+                    </p>
+                    <ul class="doc-meta-list">
+                        <li>표준 선굵기 일람표</li>
+                        <li>레이어 순서 요약</li>
+                        <li>필수 규칙 체크리스트</li>
+                        <li>단축키 모음</li>
+                    </ul>
+                    <div class="card-meta">
+                        <span class="badge">1분 읽기</span>
+                        <span class="badge">모든 사용자</span>
+                    </div>
+                </div>
+                <div class="doc-footer">
+                    <a href="docs/quick_reference.md" class="doc-button">열기 →</a>
+                </div>
+            </div>
+
+            <!-- Tutorial -->
+            <div class="doc-card">
+                <div class="doc-header alt-1">
+                    <div class="doc-icon">🎓</div>
+                    <h2 class="doc-title">튜토리얼</h2>
+                </div>
+                <div class="doc-body">
+                    <p class="doc-description">
+                        처음 시작하는 분들을 위한 36단계 완전 가이드입니다.
+                    </p>
+                    <ul class="doc-meta-list">
+                        <li>준비부터 완성까지</li>
+                        <li>각 단계별 상세 설명</li>
+                        <li>팁과 주의사항</li>
+                        <li>실습 예제 포함</li>
+                    </ul>
+                    <div class="card-meta">
+                        <span class="badge">30-60분</span>
+                        <span class="badge">초보자</span>
+                    </div>
+                </div>
+                <div class="doc-footer">
+                    <a href="docs/tutorial.md" class="doc-button">시작하기 →</a>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="doc-card">
+                <div class="doc-header alt-2">
+                    <div class="doc-icon">❓</div>
+                    <h2 class="doc-title">FAQ</h2>
+                </div>
+                <div class="doc-body">
+                    <p class="doc-description">
+                        자주 묻는 32개 질문과 상세한 답변 모음입니다.
+                    </p>
+                    <ul class="doc-meta-list">
+                        <li>일반 질문 (4개)</li>
+                        <li>사용법 (20개)</li>
+                        <li>문제 해결 (5개)</li>
+                        <li>표준 준수 (6개)</li>
+                    </ul>
+                    <div class="card-meta">
+                        <span class="badge">검색용</span>
+                        <span class="badge">모든 사용자</span>
+                    </div>
+                </div>
+                <div class="doc-footer">
+                    <a href="docs/faq.md" class="doc-button">찾아보기 →</a>
+                </div>
+            </div>
+
+            <!-- Usage Guide -->
+            <div class="doc-card">
+                <div class="doc-header alt-3">
+                    <div class="doc-icon">📖</div>
+                    <h2 class="doc-title">사용 가이드</h2>
+                </div>
+                <div class="doc-body">
+                    <p class="doc-description">
+                        모든 기능과 작업 방법을 상세히 설명한 완전 매뉴얼입니다.
+                    </p>
+                    <ul class="doc-meta-list">
+                        <li>레이어별 작업 방법</li>
+                        <li>선 스타일 적용법</li>
+                        <li>심볼 사용법</li>
+                        <li>내보내기 가이드</li>
+                    </ul>
+                    <div class="card-meta">
+                        <span class="badge">종합 참조</span>
+                        <span class="badge">모든 수준</span>
+                    </div>
+                </div>
+                <div class="doc-footer">
+                    <a href="docs/usage.md" class="doc-button">읽기 →</a>
+                </div>
+            </div>
+
+            <!-- Checklist -->
+            <div class="doc-card">
+                <div class="doc-header alt-4">
+                    <div class="doc-icon">✅</div>
+                    <h2 class="doc-title">체크리스트</h2>
+                </div>
+                <div class="doc-body">
+                    <p class="doc-description">
+                        완성된 도면을 제출하기 전 품질을 확인하는 50개 항목입니다.
+                    </p>
+                    <ul class="doc-meta-list">
+                        <li>기본 구성 요소 (10개)</li>
+                        <li>방향 및 배치 (8개)</li>
+                        <li>선 스타일 (12개)</li>
+                        <li>최종 품질 검토</li>
+                    </ul>
+                    <div class="card-meta">
+                        <span class="badge">5분 검증</span>
+                        <span class="badge">필수</span>
+                    </div>
+                </div>
+                <div class="doc-footer">
+                    <a href="docs/checklist.md" class="doc-button">확인하기 →</a>
+                </div>
+            </div>
+
+            <!-- Export Settings -->
+            <div class="doc-card">
+                <div class="doc-header alt-5">
+                    <div class="doc-icon">📤</div>
+                    <h2 class="doc-title">내보내기 설정</h2>
+                </div>
+                <div class="doc-body">
+                    <p class="doc-description">
+                        출판 품질 PDF 생성을 위한 상세 설정 가이드입니다.
+                    </p>
+                    <ul class="doc-meta-list">
+                        <li>PDF/X-1a 설정</li>
+                        <li>CLI 명령어 예제</li>
+                        <li>품질 확인 방법</li>
+                        <li>학술지별 요구사항</li>
+                    </ul>
+                    <div class="card-meta">
+                        <span class="badge">고급</span>
+                        <span class="badge">출판용</span>
+                    </div>
+                </div>
+                <div class="doc-footer">
+                    <a href="export/pdf_settings.json" class="doc-button">보기 →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learning Path Section -->
+        <section class="section" style="margin-top: var(--spacing-xxl);">
+            <h2 class="section-title">추천 학습 경로</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3 class="card-title">🌱 초보자</h3>
+                    <div class="steps" style="margin-top: var(--spacing-md);">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4 class="step-title">빠른 참조</h4>
+                                <p class="step-description">전체 개요 파악 (1분)</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4 class="step-title">튜토리얼</h4>
+                                <p class="step-description">단계별 실습 (30-60분)</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4 class="step-title">FAQ</h4>
+                                <p class="step-description">궁금증 해결 (필요시)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">🚀 경험자</h3>
+                    <div class="steps" style="margin-top: var(--spacing-md);">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4 class="step-title">빠른 참조</h4>
+                                <p class="step-description">규격 확인 (1분)</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4 class="step-title">체크리스트</h4>
+                                <p class="step-description">품질 검증 (5분)</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4 class="step-title">FAQ</h4>
+                                <p class="step-description">문제 해결 (필요시)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>구석기 석기 일러스트 Inkscape 최소 템플릿 v1.0.0</p>
+        </footer>
+    </div>
+</body>
+</html>
